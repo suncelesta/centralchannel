@@ -13,7 +13,7 @@ public class Inside : TimingState<Inside>
 	    _exitCanalButton = GameObject.Find("Canvas").transform.Find("ExitCanalButton").gameObject;
 	    _exitCanalButton.SetActive(false);
 	    
-        promiseTimer.WaitFor(4f)
+        promiseTimer.WaitFor(2f)
         .Then(() => FadeInButton(0.1f));
     }
 
