@@ -16,7 +16,8 @@ public class Tutorial : MonoBehaviour
                         TutorialSteps.FadeIn.GetInstance(),
                         TutorialSteps.AxisRotation.GetInstance(),
                         TutorialSteps.CenterRotation.GetInstance(),
-                        TutorialSteps.Zoom.GetInstance()
+                        TutorialSteps.Zoom.GetInstance(),
+                        TutorialSteps.Hint.GetInstance()
                 };
         }
 

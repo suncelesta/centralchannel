@@ -113,6 +113,44 @@ public static class TutorialSteps
                         }
                 }
         }
+        
+        public class Hint : State<Hint>
+        {
+                private const float MinShowTime = 3f;
+                
+                private readonly GameObject _text = FindText("HintText");
+                private float _showedTime;
+                public override void Enter()
+                {
+                        base.Enter();
+                        _text.SetActive(true);
+                        _showedTime = Time.time;
+                }
+                
+                public void OnObjectGrab()
+                {
+                        CloseHint();
+                }
+                
+                public void OnAxisRotationBegan()
+                {
+                        CloseHint();
+                }
+                
+                public void OnZoom()
+                {
+                        CloseHint();
+                }
+
+                private void CloseHint()
+                {
+                        if (Time.time - _showedTime >= MinShowTime)
+                        {
+                                _text.SetActive(false);
+                                NextStep(); 
+                        } 
+                }
+        }
 
         private static void NextStep()
         {
