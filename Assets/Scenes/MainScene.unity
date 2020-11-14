@@ -3343,7 +3343,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1567417852}
   - component: {fileID: 1567417853}
-  - component: {fileID: 1567417854}
   - component: {fileID: 1567417855}
   m_Layer: 5
   m_Name: RotateSlider
@@ -3417,26 +3416,25 @@ MonoBehaviour:
   m_FillRect: {fileID: 377533333}
   m_HandleRect: {fileID: 226840269}
   m_Direction: 0
-  m_MinValue: -1
-  m_MaxValue: 1
+  m_MinValue: -180
+  m_MaxValue: 180
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
---- !u!114 &1567417854
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1567417851}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 177624a1002a1497f86dc8c3f12fbfda, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _canal: {fileID: 1727798182}
+      m_Calls:
+      - m_Target: {fileID: 1727798182}
+        m_TargetAssemblyTypeName: RotateObject, Assembly-CSharp
+        m_MethodName: AxisRotateBy
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1567417855
 MonoBehaviour:
   m_ObjectHideFlags: 0

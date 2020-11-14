@@ -64,9 +64,9 @@ public class RotateObject : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
         KeepLightRotation();
     }
 
-    public void Rotate(Vector3 axis, float angle)
+    public void AxisRotateBy(float angle)
     {
-        transform.Rotate(axis, angle);
+        transform.Rotate(Vector3.down, angle + transform.eulerAngles.y);
         KeepLightRotation();
     }
 
