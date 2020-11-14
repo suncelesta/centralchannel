@@ -10,7 +10,6 @@ public class NavigationController : FSMBehaviour
     {
         if (PlayerPrefs.GetInt("SeenTutorial") == 1)
         {
-            Outside.GetInstance().EnableHelpButton();
             ChangeStateTo(Outside.GetInstance());
         }
         else

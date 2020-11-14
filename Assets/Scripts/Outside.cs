@@ -8,9 +8,6 @@ public class Outside : TimingState<Outside>
     private Transform _camera;
     private Transform _canal;
 
-    private bool _hasHelpButton;
-    private Button _helpButton;
-
     public override void Enter()
     {
         _camera = Camera.main.transform;
@@ -19,25 +16,16 @@ public class Outside : TimingState<Outside>
         var buttonObj = GameObject.Find("Canvas").transform
             .Find("EnterCanalButton").GetComponent<Button>();
         _insideButton = new ConditionalButton(buttonObj, FacesCanalTop);
-
-        if (_hasHelpButton) _helpButton.gameObject.SetActive(true);
     }
 
     public override void Exit()
     {
         _insideButton.SetActive(false);
-        if (_hasHelpButton) _helpButton.gameObject.SetActive(false);
     }
     
     public override void Update()
     {
         _insideButton.Update();
-    }
-
-    public void EnableHelpButton()
-    {
-        _hasHelpButton = true;
-        _helpButton = GameObject.Find("Canvas").transform.Find("HelpButton").GetComponent<Button>(); 
     }
 
     private bool FacesCanalTop()
