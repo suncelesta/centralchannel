@@ -6,7 +6,7 @@ public class Exit : MonoBehaviour {
     {
         if (!Application.isEditor)
         {
-            System.Diagnostics.Process.GetCurrentProcess().Kill();
+            Application.Quit();
         }
     }
 }
