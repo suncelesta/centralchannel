@@ -8,7 +8,7 @@ public class NavigationController : FSMBehaviour
 {
     void Start()
     {
-        if (PlayerPrefs.GetInt("SeenTutorial") == 1)
+        if (Settings.LoadSeenTutorial())
         {
             ChangeStateTo(Outside.GetInstance());
         }

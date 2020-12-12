@@ -16,7 +16,6 @@ public class TutorialState : TimingState<TutorialState>
 
     public override void Exit()
     {
-        PlayerPrefs.SetInt("SeenTutorial", 1);
-        PlayerPrefs.Save();
+        Settings.SaveSeenTutorial();
     }
 }
