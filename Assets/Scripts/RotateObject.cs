@@ -61,22 +61,11 @@ public class RotateObject : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
     public void Rotate(Quaternion rotation)
     {
         transform.localRotation *= rotation;
-        KeepLightRotation();
     }
 
     public void AxisRotateBy(float angle)
     {
         transform.Rotate(Vector3.down, angle + transform.eulerAngles.y);
-        KeepLightRotation();
-    }
-
-    private void KeepLightRotation()
-    {
-        var light = transform.Find("Light");
-        for (int i = 0; i < light.childCount; i++)
-        {
-            light.GetChild(i).LookAt(_camera.transform);
-        }
     }
 
     public void OnPointerDown(PointerEventData eventData)

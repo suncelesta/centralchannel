@@ -162,7 +162,12 @@ namespace MK.Glow
                 _mrtBindingsSRP[_renderTargetCount].colorRenderTargets[i] = renderTargets[i].renderTargetIdentifier;
             }
             _mrtBindingsSRP[_renderTargetCount].depthRenderTarget = _mrtBindingsSRP[_renderTargetCount].colorRenderTargets[0];
+
+            #if UNITY_2019_1_OR_NEWER
+            cmd.SetRenderTarget(_mrtBindingsSRP[_renderTargetCount], 0, CubemapFace.Unknown, -1);
+            #else
             cmd.SetRenderTarget(_mrtBindingsSRP[_renderTargetCount]);
+            #endif
 		}
         #else
         private static RenderTargetIdentifier[][] _mrtBindingsSRP = new RenderTargetIdentifier[6][]

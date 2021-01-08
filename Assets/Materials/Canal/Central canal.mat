@@ -5,7 +5,8 @@ Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: Central canal
   m_Shader: {fileID: 4800000, guid: 3be33a8d96e3d4feeb801c6afe2ea52f, type: 3}
   m_ShaderKeywords: 
@@ -103,3 +104,4 @@ Material:
     - _FColor: {r: 1, g: 1, b: 1, a: 1}
     - _MKGlowColor: {r: 1, g: 1, b: 1, a: 0.5}
     - _MKGlowTexColor: {r: 1, g: 1, b: 1, a: 0.25}
+  m_BuildTextureStacks: []
