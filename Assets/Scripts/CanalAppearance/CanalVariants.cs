@@ -7,6 +7,8 @@ public class CanalVariants : MonoBehaviour
 {
     public SideCanal left;
     public SideCanal right;
+    public GameObject maleBody;
+    public GameObject femaleBody;
 
     public void MakeMale(bool doMake)
     {
@@ -14,6 +16,8 @@ public class CanalVariants : MonoBehaviour
         {
             left.MakeRed();
             right.MakeWhite();
+            maleBody.SetActive(true);
+            femaleBody.SetActive(false);
             Settings.SaveGender(Settings.Gender.Male);
         }
     }
@@ -24,6 +28,8 @@ public class CanalVariants : MonoBehaviour
         {
             left.MakeWhite();
             right.MakeRed();
+            maleBody.SetActive(false);
+            femaleBody.SetActive(true);
             Settings.SaveGender(Settings.Gender.Female);
         }
     }

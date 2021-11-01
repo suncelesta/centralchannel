@@ -1968,7 +1968,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: e8f310e1ac12d4e6499e027acacf226a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.1
+      value: -0.1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e8f310e1ac12d4e6499e027acacf226a,
         type: 3}
@@ -1978,7 +1978,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: e8f310e1ac12d4e6499e027acacf226a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.19
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e8f310e1ac12d4e6499e027acacf226a,
         type: 3}
@@ -2023,7 +2023,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: e8f310e1ac12d4e6499e027acacf226a,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.49976107
+      value: -0.4997611
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e8f310e1ac12d4e6499e027acacf226a,
         type: 3}
@@ -2058,12 +2058,12 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e8f310e1ac12d4e6499e027acacf226a,
         type: 3}
       propertyPath: m_Name
-      value: Body Woman
+      value: Body Female
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e8f310e1ac12d4e6499e027acacf226a,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3370978846345017449, guid: e8f310e1ac12d4e6499e027acacf226a,
         type: 3}
@@ -3924,6 +3924,12 @@ MonoBehaviour:
   _SortingOrder: 0
   _FadeOutBegin: -150
   _FadeOutEnd: -200
+--- !u!1 &1677608327 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e8f310e1ac12d4e6499e027acacf226a,
+    type: 3}
+  m_PrefabInstance: {fileID: 916618105}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1677608328 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e8f310e1ac12d4e6499e027acacf226a,
@@ -4216,6 +4222,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_AspectMode: 3
   m_AspectRatio: 0.56
+--- !u!1 &1847565241 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 9b0b211c99523424db9d07ff23d2f274,
+    type: 3}
+  m_PrefabInstance: {fileID: 1930516662}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1885710959
 GameObject:
   m_ObjectHideFlags: 0
@@ -4476,7 +4488,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9b0b211c99523424db9d07ff23d2f274,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6691324802411160264, guid: 9b0b211c99523424db9d07ff23d2f274,
         type: 3}
@@ -4740,6 +4752,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   left: {fileID: 667378431}
   right: {fileID: 156018824}
+  maleBody: {fileID: 1847565241}
+  femaleBody: {fileID: 1677608327}
 --- !u!114 &919132148173649513
 MonoBehaviour:
   m_ObjectHideFlags: 0
