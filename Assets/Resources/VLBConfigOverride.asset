@@ -22,7 +22,7 @@ MonoBehaviour:
   sharedMeshSides: 24
   sharedMeshSegments: 5
   globalNoiseScale: 0.5
-  globalNoiseVelocity: {x: 0, y: 0, z: -0.2}
+  globalNoiseVelocity: {x: 0, y: 0, z: -1}
   fadeOutCameraTag: MainCamera
   noise3DData: {fileID: 4900000, guid: 91ed995e34859c846bb4dea7d34e9292, type: 3}
   noise3DSize: 64
