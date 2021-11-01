@@ -24,7 +24,7 @@ public class Zoom : MonoBehaviour {
         
         _camera = Camera.main.transform;
 
-        _rigidbody = GetComponent<Rigidbody>();
+        _rigidbody = GameObject.Find("Canals").GetComponent<Rigidbody>();
 
         // Make the rigid body not change rotation
         if (_rigidbody)
@@ -91,6 +91,8 @@ public class Zoom : MonoBehaviour {
     {
         Ray ray = new Ray(_camera.position, direction);
         RaycastHit hit;
+
+        _targetCollider.Raycast(ray, out hit, direction.magnitude);
 
         return _targetCollider.Raycast(ray, out hit, direction.magnitude) ? hit.distance : 0;
     }
