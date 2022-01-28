@@ -1,37 +1,17 @@
-## Welcome to GitHub Pages
+## Приложение "Центральный канал"
 
-You can use the [editor on GitHub](https://github.com/suncelesta/centralchannel/edit/master/docs/index.md) to maintain and preview the content for your website in Markdown files.
+### Что это?
+Виртуальная 3D-среда, в которой можно покрутить и рассмотреть визуализацию, используемую в некоторых методах Янтра-йоги.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### А что, так можно?
+Можно, если:
+– Вы являетесь членом [Дзогчен-общины](https://dzogchen.net/)
+– Вы получили инструкции по Янтра-йоге 2го уровня от сертифицированного инструктора
 
-### Markdown
+Иначе это попросту не имеет смысла. Наставлений по практике в приложении нет.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### А что, поможет?
+Может быть, да, а может быть, нет – зависит от вас.
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/suncelesta/centralchannel/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+### А где взять?
+[Для Android](https://play.google.com/store/apps/details?id=io.github.suncelesta.centralchannel)
